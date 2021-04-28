@@ -1,9 +1,13 @@
 package nmw.springframework.manualdi.controller;
 
 import nmw.springframework.manualdi.service.GreetingService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class PropertyInjectedController {
 
+    @Autowired
     GreetingService greetingService;
 
     public String getGreeting() {
